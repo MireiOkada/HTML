@@ -4,11 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="content-language" content="ja">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>メンズエステ・エステーション</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <link href="/favicon.ico?1449214172" type="image/x-icon" rel="icon" />
-    <link href="/favicon.ico?1449214172" type="image/x-icon" rel="shortcut icon" />
     <link rel="stylesheet" type="text/css" href="style.css" />
 
 </head>
@@ -80,6 +77,8 @@
                 <div>
                     <a href="/shops/search">店舗検索</a> <a href="/therapists/search">セラピスト検索</a> <a href="/shops/aw_search"></a> </div>
             </section>
+
+
             <section id="area-search">
                 <label for="panel">
                     <i class="icon-location"></i>エリア検索
@@ -182,21 +181,7 @@
                 </ul>
             </section>
             <section id="top-twitter">
-                <a class="twitter-timeline" href="https://twitter.com/estanabicom/lists/list" data-widget-id="671564071242612736" rel="nofollow">https://twitter.com/estanabicom/lists/listのツイート</a>
-                <script>
-                    ! function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0],
-                            p = /^http:/.test(d.location) ? 'http' : 'https';
-                        if (!d.getElementById(id)) {
-                            js = d.createElement(s);
-                            js.id = id;
-                            js.src = p + "://platform.twitter.com/widgets.js";
-                            fjs.parentNode.insertBefore(js, fjs);
-                        }
-                    }(document, "script", "twitter-wjs");
-
-                </script>
-            </section>
+      
             <div id="side-banner">
                 <a href="http://ikebukuro-zoo.com/" target="_blank"><img src="/img/banners/a25f28fd17cfa50d410abdc8504a5a27a79db87a.png?1509187829" alt="回春エステの決定版はこちら" /></a></div>
 
@@ -431,7 +416,7 @@
                 <section class="top-banner">
                     <div class="banner-item">
                         <!-- スライドバナー -->
-                        <a href="http://aroma-blossom.com"><img src="img/banner.png"  alt="アロマブラッサム"></a>
+                        <a href="http://aroma-blossom.com"><img src="img/banner.png" alt="アロマブラッサム"></a>
                     </div>
                 </section>
 
@@ -827,50 +812,11 @@
                     }
 
                 </style>
-                <script>
-                    $(function() {
-                        $('#therapists').owlCarousel({
-                            items: 5,
-                            autoplay: true,
-                            autoplayTimeout: 3000,
-                            responsive: {
-                                0: {
-                                    items: 2,
-                                    dots: false
-                                },
-                                768: {
-                                    items: 3
-                                },
-                                1000: {
-                                    items: 5,
-                                }
-
-                            }
-                        });
-                    });
-
-                    $(function() {
-                        var w = $(window).width();
-                        var view = '.view';
-
-                        if (w < 500) {
-                            $(view).hide();
-                        }
-                        $('.why_title').on("click", function() {
-
-                            $(view).slideToggle("fast");
-                            return false;
-                        });
-                    });
-
-                </script>
             </div>
-        </div><!-- /main-box -->
-
-        <div id="side-banner">
-
-            <a href="http://ikebukuro-zoo.com/" target="_blank"><img src="img/banner.png" alt="回春エステの決定版はこちら" /></a>
         </div>
+        <!-- /main-box -->
+
+
     </div>
 
     <footer>
@@ -879,7 +825,6 @@
         <div id="footer-inner">
             <ul>
                 <!--<li><a href="">ページリンクについて</a></li>-->
-                <li id="mail"><a href="https://canyon-ex.jp/fx19125/estamail" target="_blank">メルマガ登録はコチラから</a></li>
                 <li><a href="/pages/information/form">お問合せ</a></li>
                 <li><a href="/publish">掲載について</a></li>
                 <li><a href="/links/index">相互リンク</a></li>
@@ -890,56 +835,6 @@
             <p>Copyright&copy; 2019 e-STATION All Rights Reserved.</p>
         </div>
 
-        <script>
-            $(function() {
-                if ($('.last > a > span').parent().is('a')) {
-                    $('.last > a > span').unwrap();
-                }
-            });
-
-            //スライドバナー
-            $(function() {
-                if ($('.center-item').length) {
-                    $('.center-item').slick({
-                        centerMode: true,
-                        centerPadding: '160px',
-                        autoplay: true,
-                        autoplaySpeed: 3000,
-                        fade: true,
-                        speed: 1200,
-                        lazyLoad: 'ondemand'
-                    });
-                }
-            });
-
-            //バナースライド
-            $(function() {
-                if ($('.banner-item').length) {
-                    $('.banner-item').slick({
-                        infinite: true,
-                        dots: false,
-                        autoplay: true,
-                        autoplaySpeed: 4000,
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        responsive: [{
-                            breakpoint: 768,
-                            settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1
-                            }
-                        }, {
-                            breakpoint: 480,
-                            settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1
-                            }
-                        }]
-                    });
-                }
-            });
-
-        </script>
     </footer>
 </body>
 
